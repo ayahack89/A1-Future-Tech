@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap demo</title>
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .background-sec-1 {
+        background: url("images/hero-background-Layer.png");
+        background-size: cover;
+        background-blend-mode: darken;
+        height: 100vh;
+
+    }
+
+    .background-sec-2 {
+        background: url("images/third-mid-section.png");
+        background-size: cover;
+        background-blend-mode: darken;
+
+    }
+
+    .background-sec-3 {
+        background: url("images/whyusbackground.png");
+        background-size: cover;
+        background-blend-mode: darken;
+
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    .form-control {
+        background-color: whitesmoke;
+    }
+
+    .boxbackground {
+        background: rgba(96, 1, 169, 0.6) url("images/2ndboximg3.png");
+        background-size: cover;
+        background-blend-mode: darken;
+
+    }
+
+    .small-image {
+        width: 10px;
+        height: 10px;
+    }
+</style>
+
+<body>
+    <!-- navbar -start -->
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <!-- Replace "Navbar" with your logo image -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto"> <!-- Aligns the navbar items to the right -->
+                    <a class="nav-link  main-txt" aria-current="page" href="#">Home</a>
+                    <a class="nav-link scs-txt" href="#">About Us</a>
+                    <a class="nav-link scs-txt" href="#">Technology</a>
+                    <a class="nav-link scs-txt" href="#">Career</a>
+                    <a class="nav-link scs-txt" href="#">Spotlight</a>
+                    <a class="nav-link scs-txt" href="#">Contact Us</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar -end -->
+
+    <!-- hero -start  -->
+    <div class="background-sec-1">
+        <div class="container">
+            <div class="row flex-lg-row align-items-center g-5 py-5 container">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/hero-image.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="1100" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 gradient-text">Compatative Software Development</h1>
+                    <p class="lead">Solution for your digital success</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-grad">Get in touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero -end  -->
+
+    <!-- creating-buisness section -start  -->
+    <div class="container my-5">
+        <div class="hero-section background-sec-2">
+            <div class="left-section">
+                <div class="big-e">E</div>
+                <div class="circle"></div>
+                <div class="small-circle"></div>
+                <h2>For elogix</h2>
+                <p>logical minds...</p>
+            </div>
+            <div class="right-section">
+                <h2 class="h1">
+                    Creating Business <br>
+                    <span class="highlight">Advantages Since 2002</span>
+                </h2>
+                <div class="d-flex">
+                    <div class="point">
+                        <span>01</span>
+                        <p>Cloud led Innovation</p>
+                    </div>
+                    <div class="point">
+                        <span>02</span>
+                        <p>Cybersecurity in Action</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="point">
+                        <span>03</span>
+                        <p>Talent Transformation</p>
+                    </div>
+                    <div class="point">
+                        <span>04</span>
+                        <p>AIML Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- creating-buisness section -end  -->
+
+    <!-- member section -start -->
+    <div class="container p-4 my-2">
+        <div class="membership-section">
+            <h2 class=" fw-bold lh-1 h1 mb-5">Elogix Software Is a <span class="highlight">Member</span> of</h2>
+            <div class="row logo-container mt-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/bni-logo.png" alt="BNI Logo">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/nasscom-logo.png" alt="NASSCOM Logo">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/bcci-logo.png" alt="BCC&I Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- member section -end  -->
+    <!-- middle-1 hero -start  -->
+    <div class="container p-4">
+        <div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center">
+            <!-- Image Column (now on the left) -->
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg order-lg-1 order-2">
+                <img class="rounded-lg-3 img-fluid" src="images/middle-hero-image1.png" alt="Bootstrap Docs"
+                    width="720">
+            </div>
+
+            <!-- Text Column (now on the right) -->
+            <div class="col-lg-8 p-1 p-lg-5 pt-lg-3 mt-4 order-lg-2 order-1">
+                <h2 class="display-5 fw-bold lh-1"><span class="highlight">Digi-Tech Solution</span><br>Exparts at Your
+                    <br> Doorstep</h2>
+                <p class="lead" style="font-size: 18px;">
+                    Elogix is a front-line consultancy house specializing in multiple information technology domains. A
+                    globally recognized IT company building innovative solutions to address clients’ complex digital
+                    needs. Our specializations include our multi-domain exposure, varied software development expertise,
+                    and IT advisory and outsourcing services. </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-grad btn-sm">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- middle-1 hero -end  -->
+    <!-- Solution Section - Start -->
+    <div class="container my-5">
+        <h2 class="display-5 fw-bold lh-1 text-center mb-4">
+            <span class="high-light">Our</span> Solution
+        </h2>
+        <div class="row g-4">
+            <!-- IT Consultancy Card -->
+            <div class="col-12 col-md-4">
+                <div class="card consultancy-card h-100 text-center shadow-sm">
+                    <img src="images/2ndboximg1.png" class="card-img-top" alt="IT Consultancy">
+                    <div class="card-body">
+                        <h5 class="card-title">IT Consultancy</h5>
+                        <p class="card-text">We provide expert IT consultancy services to enhance your business
+                            processes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Background Card -->
+            <div class="col-12 col-md-4">
+                <div class="card boxbackground h-100 text-center shadow-sm" style="background-color: #690099;">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <p class="card-text m-0" style="color: white;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise ERP Solution Card -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="images/2ndboximg2.png" class="card-img-top" alt="Enterprise ERP Solution">
+                    <div class="card-body">
+                        <h5 class="card-title">Enterprise ERP Solution</h5>
+                        <p class="card-text">Optimize your operations with our cutting-edge ERP solutions tailored to
+                            your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="three-dots"></div>
+        </div>
+    </div>
+    <!-- Solution Section - End -->
+
+    <!-- why us -start  -->
+    <div class="container">
+        <div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center">
+            <!-- Image Column (now on the right) -->
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg order-lg-2 order-2">
+                <img class="rounded-lg-3 img-fluid" src="images/whyusmainimage.png" alt="Bootstrap Docs" width="720">
+            </div>
+
+            <!-- Text Column (now on the left) -->
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 order-lg-1 order-1">
+                <h2 class="fw-bold lh-1 h1">
+                    Why <span class="highlight">Us</span>
+                </h2>
+                <p>Offering 360 degree solutions from consulting to maintenance - Internally and Externally!</p>
+
+                <!-- Cards Section with Fixed Alignment -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Meeting Enterprise Goals</h5>
+                                <p class="card-text">
+                                    Our team is committed to meeting high standards by combining innovation and
+                                    collective knowledge to create the extraordinary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Building On The Credence</h5>
+                                <p class="card-text">We deliver on the commitment to helping our customers
+                                    and colleagues thrive in an ever-changing world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Emphasizing On Client Contentment</h5>
+                                <p class="card-text">
+                                    We believe in understanding our clients and delivering personalized experiences that
+                                    build loyalty and increase lifetime value.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Prioritizing Our Employees</h5>
+                                <p class="card-text">
+                                    Our employees are our family. We nurture their development, providing opportunities
+                                    for learning and mutual growth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why us -end  -->
+
+    <!-- clientel section -start -->
+    <div class="container my-5">
+        <div class="membership-section">
+            <h2 class="h1">
+                <span class="text-secondary">Clientel</span>
+            </h2>
+            <div class="row logo-container mt-4">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/chemwatch-logo.png" alt="BNI Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/nrI-logo.png" alt="NASSCOM Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/pwc-logo.png" alt="BCC&I Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="logo-card">
+                        <img src="images/kpmg-logo.png" alt="BNI Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- clientel section -end  -->
+
+    <!-- middle-2 hero -start  -->
+    <div class="container">
+        <div class="row pb-0 pe-lg-0 pt-lg-5 align-items-center">
+            <!-- Image Column (now on the left) -->
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg order-lg-1 order-2">
+                <img class="rounded-lg-3 img-fluid" src="images/middle-hero-image2.png" alt="Bootstrap Docs"
+                    width="720">
+            </div>
+
+            <!-- Text Column (now on the right) -->
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 order-lg-2 order-1">
+                <h2 class="fw-bold lh-1 h1">
+                    <span class="highlight">Work</span> with Us
+                </h2>
+                <p>Join the team of IT professionals</p>
+
+
+                <p class="lead" style="font-size: 18px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio nostrum accusamus cumque
+                    quia voluptatum provident similique est.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-grad ">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- middle-2 hero -end  -->
+
+    <!-- news&evets -start  -->
+    <div class="container my-5">
+        <div class="membership-section text-center">
+            <h2>
+                News & <span class="highlight">Events</span>
+            </h2>
+            <p class="mb-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis omnis eum vero ab aperiam.
+                Accusamus a doloribus atque ipsum! Tempore culpa accusantium, ab vero eum sint sed sapiente deleniti
+                magnam.
+            </p>
+            <button class="btn btn-grad">Read the whole story</button>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="imgbox">
+                        <img src="images/boximg-1.png" class="img-fluid rounded" alt="Box Image 1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="imgbox">
+                        <img src="images/boximg-2.png" class="img-fluid rounded" alt="Box Image 2">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="imgbox">
+                        <img src="images/boximg-3.png" class="img-fluid rounded" alt="Box Image 3">
+                    </div>
+                </div>
+                <div class="three-dots"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- news&events -end  -->
+    <!-- Contact Us - Start -->
+    <div class="container col-xl-11 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <!-- Form Column (Left Side) -->
+            <div class="col-md-10 col-lg-6 mx-auto order-lg-1">
+                <form class="p-5 p-md-5">
+                    <h2 class="display-5 fw-bold lh-1">Contact Us</h2>
+                    <p class="fs-5">Need a consultation? Let us know, and we will get in touch.</p>
+                    <div class="row g-3">
+                        <!-- Full Name -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Full Name">
+                                <label for="floatingName">Full Name</label>
+                            </div>
+                        </div>
+                        <!-- Work Email -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="Work Email">
+                                <label for="floatingEmail">Work Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-3">
+                        <!-- Company Name -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingCompany" placeholder="Company Name">
+                                <label for="floatingCompany">Company Name</label>
+                            </div>
+                        </div>
+                        <!-- Request for Service -->
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingService"
+                                    placeholder="Request for service">
+                                <label for="floatingService">Request for Service</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Concern / Message -->
+                    <div class="form-floating mt-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                            style="height: 120px"></textarea>
+                        <label for="floatingTextarea">Other Concerns</label>
+                        <button class="btn btn-grad btn-sm w-100" type="submit">Submit</button>
+                    </div>
+                    <!-- Submit Button -->
+
+
+                </form>
+            </div>
+
+            <!-- Image Column (Right Side) -->
+            <div class="col-md-10 col-lg-6 mx-auto order-lg-2 text-center">
+                <img src="images/contact-us-image.png" alt="Contact Us" class="img-fluid"
+                    style="max-width: 110%; height: auto;">
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us - End -->
+<!-- footer -start -->
+<div class="bg-light py-5 px-5 border">
+    <footer class="py-3 container">
+        <div class="row text-center text-md-start">
+            <div class="col-12 col-md-4 mb-4">
+                <h5>Bengaluru Office</h5>
+                <p class="small mb-1">
+                    <i class="ri-map-pin-line highlight"></i> 91 Springboard, Salarpuria Tower 1, 4th Floor, 
+                    Koramangala 5th Block, Beside Nexus Mall, Bengaluru - 560095
+                </p>
+                <span class="small">
+                    <i class="ri-phone-fill highlight"></i> +91 9740939804
+                </span>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <h5>Kolkata Office</h5>
+                <p class="small mb-1">
+                    <i class="ri-map-pin-line highlight"></i> Plot No - DH-6/45, Premise No - 07-0313, AA - I, Newtown, 
+                    West Bengal, India, Behind Tata Medical Centre / Opposite Unitech Gate#2 Kolkata - 700156
+                </p>
+                <span class="small">
+                    <i class="ri-phone-fill highlight"></i> +91 8981002752
+                </span>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <h5>USA Office</h5>
+                <p class="small mb-1">
+                    <i class="ri-map-pin-line highlight"></i> 0675 Calle Mar De Mariposa, San Diego, CA 92130, USA
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4 border-top bg-light">
+            <p class="mb-2 mb-md-0 small">Copyright © 2023 Elogix. All rights reserved</p>
+            <div class="image">
+                <img src="images/social-media-logo.png" alt="Social Media Logos" class="img-fluid" style="max-width: 150px;">
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- footer -end -->
+
+
+</body>
+
+</html>
